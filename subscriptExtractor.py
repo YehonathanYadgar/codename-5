@@ -21,7 +21,7 @@ def split_video_into_intervals(video_path, output_file, interval=2):
         subclip.write_videofile(output_file, codec="libx264", audio_codec="aac")
         print(f"Saved new clip: {output_file}")
 
-if _name_ == "_main_":
-    video_path = "test_vid.mp4" 
-    output_file = "output_clip.mp4"  
-    split_video_into_intervals(video_path, output_file)
+
+video_path = "test_vid.mp4" 
+output_file = "output_clip.mp4"  
+split_video_into_intervals(video_path,output_file)
